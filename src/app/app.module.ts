@@ -13,6 +13,7 @@ import { HttpInterceptorService } from './HttpInterceptorService';
 import { HomeComponent } from './HomePage/home/home.component';
 import { AdminComponent } from './HomePage/admin/admin.component';
 import { UnauthorizedComponentComponent } from './unauthorized-component/unauthorized-component.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UnauthorizedComponentComponent } from './unauthorized-component/unautho
     LoginComponent,
     HomeComponent,
     AdminComponent,
-    UnauthorizedComponentComponent
+    UnauthorizedComponentComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

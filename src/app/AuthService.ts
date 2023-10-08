@@ -12,7 +12,7 @@ import jwt_decode from 'jwt-decode';
 export class AuthService {
     private apiUrl = 'http://localhost:8080/api/auth/token';
     user: any;
-    private authToken: string | null = null;
+    //private authToken: string | null = null;
 
     constructor(private http: HttpClient, private router: Router) { }
 
@@ -21,12 +21,12 @@ export class AuthService {
     }
 
     setToken(token: string): void {
-        this.authToken = token;
+        //this.authToken = token;
         localStorage.setItem('token', token);
     }
 
     getToken(): string | null {
-        return this.authToken || localStorage.getItem('token'); // Use the authToken property if available
+        return localStorage.getItem('token'); // Use the authToken property if available
     }
 
     getHeaders(): HttpHeaders {
@@ -53,7 +53,7 @@ export class AuthService {
     }
 
     logout(): void {
-        this.authToken = null; // Clear the authToken property
+        //this.authToken = null; // Clear the authToken property
         localStorage.removeItem('token');
         this.router.navigate(['login']);
     }
