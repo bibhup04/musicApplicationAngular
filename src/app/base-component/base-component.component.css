@@ -1,0 +1,26 @@
+.all-content {
+    display: flex;
+    height: 100vh; 
+}
+
+  
+  .side-bar,
+  .contents {
+    border: 1px solid #000; /* Add a 1px solid black border */
+  }
+  
+  .side-bar {
+    width: 20%;
+    background-color: red; /* Set the background color to red */
+  }
+  
+  .contents {
+    width: 80%;
+    background-color: green; /* Set the background color to green */
+  }
+
+  .nav-bar{
+    height: 20%;
+    background-color: rgb(152, 222, 30);
+  }
+  
