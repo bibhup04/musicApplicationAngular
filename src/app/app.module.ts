@@ -14,6 +14,7 @@ import { HomeComponent } from './HomePage/home/home.component';
 import { AdminComponent } from './HomePage/admin/admin.component';
 import { UnauthorizedComponentComponent } from './unauthorized-component/unauthorized-component.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     HomeComponent,
     AdminComponent,
     UnauthorizedComponentComponent,
-    NavigationComponent
+    NavigationComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
